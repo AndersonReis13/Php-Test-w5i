@@ -10,7 +10,7 @@ Operações:
     - Pausar tarefa (data e hora)
         - não pode pausar uma tarefa se ela não foi iniciada
         - não pode pausar uma tarefa se ela já foi finalizada
-    - Finalizar tarefa (data e hora) e valor de cobrança
+    - Finalizar tarefa (data e hora) 
         - não pode finalizar uma tarefa se ela não foi inicializada
         - não pode finalizar uma tarefa se ela já foi finalizada
     - Demonstrar tarefas com categoria, responsável e suas movimentações de Início, Pausa e Finalização, demonstrando o tempo gasto.
