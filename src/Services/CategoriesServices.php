@@ -35,7 +35,7 @@ class CategoriesServices
 
 
   public function createCategory($name){
-    $sql = "INSERT INTO Categories (name) values ('{$name}')";
+    $sql = "INSERT INTO categories (name) values ('{$name}')";
     try{
       $result = $this->dbinstance->queryExecute($sql);
       $response = $result->fetch(PDO::FETCH_ASSOC);

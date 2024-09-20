@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS tasks(
   status ENUM('pending', 'started', 'paused', 'finished') NOT NULL,
   start_time DATETIME,
   pause_time DATETIME,
-  finish_time DATETIME,
+  finish_time DATETIME
 );
 
 

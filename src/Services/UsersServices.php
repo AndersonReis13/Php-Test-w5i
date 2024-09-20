@@ -16,7 +16,9 @@ class UsersServices{
 
             return $response;
         }catch(PDOException $e){
-            return $e->getMessage();
+            http_response_code(500);  
+            echo json_encode(["error"=> $e->getMessage()]);
+            exit;
         }
     }
 
@@ -29,7 +31,9 @@ class UsersServices{
 
             return $response;
         }catch(PDOException $e){
-            return $e->getMessage();
+            http_response_code(500);  
+            echo json_encode(["error"=> $e->getMessage()]);
+            exit;
         }
     }
 }

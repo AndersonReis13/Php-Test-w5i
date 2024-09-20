@@ -2,11 +2,14 @@ A linguagem de programação que deverá ser utilizada é o PHP. O banco de dado
 
 Solução para controle de tarefas:
 Operações: 
-    - Cadastro de categoria da tarefa
-    - Cadastro de responsável
-    - Cadastro de tarefa, vinculando categoria e responsável
+    - Cadastro de categoria da tarefa (feito)
+    - Cadastro de responsável (feito)
+    - Cadastro de tarefa, vinculando categoria e responsável (feito)
+
+
     - Iniciar tarefa (data e hora)
         - não pode iniciar uma tarefa se ela já foi finalizada
+        
     - Pausar tarefa (data e hora)
         - não pode pausar uma tarefa se ela não foi iniciada
         - não pode pausar uma tarefa se ela já foi finalizada
