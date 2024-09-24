@@ -7,6 +7,7 @@
   "require": {
     "doctrine/orm": "^3.2",
     "doctrine/migrations": "^3.8",
-    "symfony/cache": "^7.1"
+    "symfony/cache": "^7.1",
+    "firebase/php-jwt": "^6.10"
   }
 }

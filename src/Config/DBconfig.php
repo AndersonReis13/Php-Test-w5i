@@ -1,19 +1,20 @@
 <?php
 
+
+//classe de configuração do banco de dados
+
 class DbConfigService{
 
   private $PDO;
   public function __construct(){
     $username = "root";
-    $password = "1234567";
+    $password = "";
     $dbname = "taskcontrol";
     $host = "localhost";
 
     try{
       $this->PDO = new PDO("mysql:host={$host};dbname={$dbname}", $username, $password);
       $this->PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-      echo "sucess!";
     }catch(PDOException $e){
       die("Houve um erro na conexão do banco de dados". $e->getMessage());
     }
@@ -26,4 +27,8 @@ class DbConfigService{
     return $result;
 
   }
+
+  public function lastInsertId() {
+    return $this->PDO->lastInsertId();
+}
 }

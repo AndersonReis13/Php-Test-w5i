@@ -10,26 +10,30 @@ class CategoriesServices
   }
 
   public function getAllCategory(){
-    $sql = "SELECT * FROM categories";
+    $sql = "SELECT * FROM categories ORDER BY id ASC";
     try{
       $result = $this->dbinstance->queryExecute($sql);
-      $response = $result->fetch(PDO::FETCH_ASSOC);
+      $response = $result->fetchAll(PDO::FETCH_ASSOC);
 
       return $response;
     }catch(Exception $e){
-      return $e->getMessage();
+      http_response_code(500);
+      json_encode(["error"=> $e->getMessage()]);
+      exit;
     }
   }
 
   public function getCategoryByName($name){
-    $sql = "SELECT * FROM categories WHERE {$name}";
+    $sql = "SELECT * FROM categories WHERE name='{$name}'";
     try{
       $result = $this->dbinstance->queryExecute($sql);
-      $response = $result->fetch(PDO::FETCH_ASSOC);
+      $response = $result->fetchAll(PDO::FETCH_ASSOC);
 
       return $response;
-    }catch(PDOException $e){
-      return $e->getMessage();
+    }catch(Exception $e){
+      http_response_code(500);
+      json_encode(["error"=> $e->getMessage()]);
+      exit;
     }
   }
 
@@ -38,17 +42,12 @@ class CategoriesServices
     $sql = "INSERT INTO categories (name) values ('{$name}')";
     try{
       $result = $this->dbinstance->queryExecute($sql);
-      $response = $result->fetch(PDO::FETCH_ASSOC);
+      $response = $result->fetchAll(PDO::FETCH_ASSOC);
       
       return $response;
     }catch(PDOException $e){
-      return $e->getMessage();
+      exit;
     }
   }
-
-
-
-
-
 
 }

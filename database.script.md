@@ -26,16 +26,11 @@ CREATE TABLE IF NOT EXISTS tasks(
   status ENUM('pending', 'started', 'paused', 'finished') NOT NULL,
   start_time DATETIME,
   pause_time DATETIME,
-  finish_time DATETIME
+  finish_time DATETIME,
+  retume_time DATETIME,
+  total_time TIME
 );
 
-
-CREATE TABLE IF NOT EXISTS tasks_movements(
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  task_id INT,
-  action ENUM('start', 'pause', 'finish') NOT NULL,
-  timestamp DATETIME NOT NULL
-);
 
 
 -- constraints 
@@ -46,6 +41,5 @@ ADD CONSTRAINT FOREIGN KEY(user_id) REFERENCES users(id);
 ALTER TABLE tasks
 ADD CONSTRAINT FOREIGN KEY(category_id) REFERENCES categories(id);
 
-ALTER TABLE tasks_movements
-ADD CONSTRAINT FOREIGN KEY(task_id) REFERENCES tasks(id);
+
 

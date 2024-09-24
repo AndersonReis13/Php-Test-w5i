@@ -36,6 +36,10 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
         ),
+        'F' => 
+        array (
+            'Firebase\\JWT\\' => 13,
+        ),
         'D' => 
         array (
             'Doctrine\\Persistence\\' => 21,
@@ -111,6 +115,10 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
         'Doctrine\\Persistence\\' => 
         array (

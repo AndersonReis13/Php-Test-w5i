@@ -8,14 +8,14 @@ Operações:
 
 
     - Iniciar tarefa (data e hora)
-        - não pode iniciar uma tarefa se ela já foi finalizada
+        - não pode iniciar uma tarefa se ela já foi finalizada (feito)
         
     - Pausar tarefa (data e hora)
-        - não pode pausar uma tarefa se ela não foi iniciada
-        - não pode pausar uma tarefa se ela já foi finalizada
+        - não pode pausar uma tarefa se ela não foi iniciada (feito)
+        - não pode pausar uma tarefa se ela já foi finalizada (feito)
     - Finalizar tarefa (data e hora) 
-        - não pode finalizar uma tarefa se ela não foi inicializada
-        - não pode finalizar uma tarefa se ela já foi finalizada
-    - Demonstrar tarefas com categoria, responsável e suas movimentações de Início, Pausa e Finalização, demonstrando o tempo gasto.
+        - não pode finalizar uma tarefa se ela não foi inicializada (feito)
+        - não pode finalizar uma tarefa se ela já foi finalizada (feito)
+    - Demonstrar tarefas com categoria, responsável e suas movimentações de Início, Pausa e Finalização, demonstrando o tempo gasto. (feito)
     
 O projeto deve ser enviado em pasta zipada/compactada e identificada para o e-mail rh@w5i.com.br, até o dia 24/09/2024 às 12:00

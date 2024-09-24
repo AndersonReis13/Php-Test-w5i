@@ -8,8 +8,8 @@ class UsersServices{
     }
 
 
-    public function singUp(string $email, string $hashPass){
-        $sql = "INSERT INTO users (email, password) values ('{$email}', '{$hashPass}') ";
+    public function singUp(string $email, string $hashpass){
+        $sql = "INSERT INTO users (email, password) values ('{$email}', '{$hashpass}') ";
         try{
             $result = $this->dbInstance->queryExecute($sql);
             $response = $result ->fetch(PDO::FETCH_ASSOC);
@@ -24,7 +24,7 @@ class UsersServices{
 
 
     public function checkUserInDataBase(string $email){
-        $sql = "SELECT * FROM users where email={$email}";
+        $sql = "SELECT * FROM users WHERE email='{$email}'";
         try{
             $result = $this->dbInstance->queryExecute($sql);
             $response = $result ->fetch(PDO::FETCH_ASSOC);
