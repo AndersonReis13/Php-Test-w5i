@@ -8,7 +8,7 @@ class DbConfigService{
   private $PDO;
   public function __construct(){
     $username = "root";
-    $password = "";
+    $password = "1234567";
     $dbname = "taskcontrol";
     $host = "localhost";
 

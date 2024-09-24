@@ -67,8 +67,8 @@ class UserControllers{
 
    http_response_code(200);
    echo json_encode([
-     "access_token"=> $token, 
-     "message" => "Login feito com sucesso."
+     "token"=> $token, 
+     "message" => "Login feito com sucesso!"
    ]);
 
   }
