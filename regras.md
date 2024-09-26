@@ -18,4 +18,3 @@ Operações:
         - não pode finalizar uma tarefa se ela já foi finalizada (feito)
     - Demonstrar tarefas com categoria, responsável e suas movimentações de Início, Pausa e Finalização, demonstrando o tempo gasto. (feito)
     
-O projeto deve ser enviado em pasta zipada/compactada e identificada para o e-mail rh@w5i.com.br, até o dia 24/09/2024 às 12:00
